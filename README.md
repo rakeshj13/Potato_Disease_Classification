@@ -8,11 +8,7 @@ This project implements a deep learning model to classify potato plant leaves in
 1. [Project Overview](#project-overview)
 2. [Dataset](#dataset)
 3. [Model Architecture](#model-architecture)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Results](#results)
-7. [Future Improvements](#future-improvements)
-8. [License](#license)
+4. [Results](#results)
 
 ---
 
@@ -34,11 +30,7 @@ The dataset used is from the **PlantVillage** dataset. The project focuses on th
 - `Potato___Early_blight`
 - `Potato___Late_blight`
 - `Potato___healthy`
-
-Dataset preparation steps:
-1. Copy relevant folders from the original dataset to a working directory.
-2. Preprocess images by resizing and normalizing them.
-
+- 
 ---
 
 ## Model Architecture
@@ -52,9 +44,21 @@ The model is a convolutional neural network (CNN) with the following layers:
 
 ---
 
-## Installation
+# Results
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/plant-disease-classification.git
-   cd plant-disease-classification
+## Model Accuracy
+
+- **Training Accuracy:** 97.51%  
+- **Validation Accuracy:** 97.92%  
+- **Test Accuracy:** 98.54%  
+
+## Example Predictions
+
+Below are some example predictions made by the model:
+
+| Image                 | Predicted Label        | Confidence |
+|-----------------------|------------------------|------------|
+| `Potato___healthy`    | Potato___healthy       | 99.2%      |
+| `Potato___Early_blight` | Potato___Early_blight | 98.5%      |
+| `Potato___Late_blight`  | Potato___Late_blight  | 97.8%      |
+
